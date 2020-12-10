@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" > 
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="for.js"></script>
+    <title>Ejercicio</title>
+</head>
+<body>
+    <!-- clase form -->
+<form class="formulario">   
+    
+    <h1>Formulario</h1>
+    <!-- Donde encontramos los iconos -->
+    <div class="contenedor"> 
+
+        <div class="input-contenedor">
+            <i class="far fa-id-card icon"></i>
+            <input type="text" name="Cedula" id="Cedula" placeholder="Cedula">                
+        </div>
+
+     <div class="input-contenedor"> 
+         <i class="fas fa-user icon"></i>
+         <input type="text" name="Nombres" id="Nombres" placeholder="Nombres">
+         </div>
+         
+        <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" name="Apellidos" id="Apellidos" placeholder="Apellidos">
+        </div>
+
+        <div>
+            <rigth>
+            <i class="fas fa-user icon"></i>
+            <select id="Estado" 
+            name="Estado"required>
+            <option value="0">Estado Civil.....</option>
+            <option value="Soltero(a)">Soltero(a)</option>
+            <option value="Casado(a)">Casado(a)</option>
+            <option value="Divorciado(a)">Divorciado(a)</option>
+            <option value="Viudo(a)">Viudo(a)</option>
+            <option value="Union Libre">Union Libre</option>
+            </select>
+            </rigth>
+
+            <left> 
+                <i class="fas fa-venus-mars icon"></i>
+                <select id="Genero" 
+                name="Genero"required>
+                    <option value="0">Genero.....</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    </select>
+            </left>
+        </div>
+            
+           <br><div class="input-contenedor">
+                <i class="fas fa-map-marked-alt icon"></i>
+                <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad">
+            </div>
+
+                <div class="input-contenedor">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <input type="text" name="Direccion" id="Direccion" placeholder="Direccion">
+                </div>
+            
+
+                <div class="input-contenedor">
+                    <i class="fas fa-phone icon"></i>
+                    <input type="text" name="Telefono" id="Telefono" placeholder="Telefono">
+                </div>
+            
+            <div class="input-contenedor">
+             <i class="fas fa-envelope icon"></i>
+             <input type="text" name="Email" id="Email" placeholder="Email">
+            </div> 
+        </div>
+        <button type="button" onclick="getData()" class="button">Registrate</button>
+    </div>
+</form>
+</body>
+</html>
